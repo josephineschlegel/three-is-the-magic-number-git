@@ -91,9 +91,11 @@ nav {
 	-webkit-animation: hue 4s infinite linear;
 
 }
+/*
 .grid-item:nth-child(2n) {
   border: 2px dashed red;
 }
+*/
 #kopenhagen-grid {
     margin-top: -10px;
 
