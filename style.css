@@ -18,17 +18,19 @@ p {
 
 /*INDEX PAGE*/
 #index {
-     background-color: #fffdf4;
+    background-color: #fffdf4;
 }
+
 nav {
 
- background: linear-gradient(270deg, #efeddf, #87867e, #bfbeb2, #7e7c76);
-background-size: 800% 800%;
-animation: gradient 10s ease infinite;
+    background: linear-gradient(270deg, #efeddf, #87867e, #bfbeb2, #7e7c76);
+    background-size: 800% 800%;
+    animation: gradient 10s ease infinite;
+
 }
 
 .logo {
-    width: 150px;
+    width: 200px;
     height: auto;
     display: flex;
     float: right;
@@ -38,49 +40,114 @@ animation: gradient 10s ease infinite;
     background-color: transparent;
 }
 
+
+
 .nav-container a {
     text-decoration: none;
     background-color: transparent;
 
 }
+.nav-container a :hover {
+    background-color: #efeddf;
 
+}
 .nav-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-   margin: 2px;
-     grid-column-gap: 10px;
+    margin: 2px;
+    grid-column-gap: 10px;
     grid-gap: 0px;
+
+
 }
 
 .grid-item {
 
-border: 10px solid #fffdf4;
+  border: 10px solid #fffdf4;
     padding: 20px;
-    height: 550px;
+    height: 100%;
     background-color: transparent;
+   width: auto;
+
 }
 
 .grid-text {
+
     margin-top: 10px;
-    line-height: 55px;
+    line-height: 70px;
     margin-left: 5px;
     text-decoration: none;
+    justify-content: space-around;
     color: #302e2f;
     font-family: alternate-gothic-no-3-d, sans-serif;
-    font-weight: 400;
+    font-weight: 800;
     font-style: normal;
     color: #302e2f;
-    font-size: 45px;
+    font-size: 60px;
     background-color: transparent;
+    background-image: -webkit-linear-gradient(95deg, #fffdf4, #302e2f, #2E2E2B, #D6D4C7, #33332F);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-webkit-animation: hue 4s infinite linear;
+
 }
 
 #kopenhagen-grid {
     margin-top: -10px;
+
 }
+
+@-webkit-keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+  to {
+    -webkit-filter: hue-rotate(-160deg);
+  }
+}
+
+@keyframes color-change {
+    0% {
+        color: #fffdf4;
+    }
+
+    50% {
+        color: blue;
+    }
+
+    100% {
+        color: red;
+    }
+}
+
+
 
 
 @keyframes gradient {
-   0%{background-position:0% 51%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 51%}
+    0% {
+        background-position: 0% 51%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 51%
+    }
 }
+/*MEDIA QUIERIES*/
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {...}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {...}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {...}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...}
