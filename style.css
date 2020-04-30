@@ -38,6 +38,7 @@ nav {
     margin-right: -10px;
     margin-top: -10px;
     background-color: transparent;
+
 }
 
 
@@ -69,25 +70,28 @@ nav {
     background-color: transparent;
    width: auto;
 
+
 }
 
-.grid-text {
+.grid-text, grid-text p {
 
     margin-top: 10px;
     line-height: 70px;
     margin-left: 5px;
     text-decoration: none;
-    justify-content: space-around;
-    color: #302e2f;
+
+    color: transparent;
     font-family: alternate-gothic-no-3-d, sans-serif;
-    font-weight: 800;
+    font-weight: 600;
     font-style: normal;
     color: #302e2f;
-    font-size: 60px;
+    font-size: 70px;
     background-color: transparent;
     background-image: -webkit-linear-gradient(95deg, #fffdf4, #302e2f, #2E2E2B, #D6D4C7, #33332F);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 0.1px;
+    -webkit-text-stroke-color: #D6D4C7,;
 	-webkit-animation: hue 4s infinite linear;
 
 }
@@ -103,7 +107,7 @@ nav {
 
 @-webkit-keyframes hue {
   from {
-    -webkit-filter: hue-rotate(0deg);
+    -webkit-filter: hue-rotate(40eg);
   }
   to {
     -webkit-filter: hue-rotate(-160deg);
