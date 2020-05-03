@@ -2,7 +2,7 @@
 
 
 h1 {
-    font-family: alternate-gothic-no-2-d, sans-serif;
+    font-family: alternate-gothic-no-3-d, sans-serif;
     font-weight: 400;
     font-style: normal;
     text-transform: uppercase;
@@ -90,9 +90,9 @@ nav {
     background-image: -webkit-linear-gradient(95deg, #fffdf4, #302e2f, #2E2E2B, #D6D4C7, #33332F);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 0.1px;
-    -webkit-text-stroke-color: #D6D4C7,;
-	-webkit-animation: hue 4s infinite linear;
+/*    -webkit-text-stroke-width: 0.1px;*/
+/*    -webkit-text-stroke-color: #D6D4C7,;*/
+/*	-webkit-animation: hue 4s infinite linear;*/
 
 }
 /*
