@@ -9,8 +9,8 @@
 	text-align: center;
 	align-content: center;
 	justify-content: center;
-margin-left: 30px;
-    width: 160px;
+/*margin-left: 30px;*/
+    /*width: 160px;*/
 
 }
 li{
@@ -213,9 +213,9 @@ section>h1{
 	margin-bottom: 10px;
     margin-top: 30px;
     align-content: center;
-    margin-left: 40px;
-    margin-right: auto;
-        box-shadow: 2px 9px 18px #888888;
+    /*margin-left: 40px;*/
+    /*margin-right: auto;*/
+    box-shadow: 2px 9px 18px #888888;
 }
 .artist_header h1{
     font-size: 30px;
