@@ -72,7 +72,7 @@ footer {
 	padding-top: 50px;
 	padding-bottom: 50px;
 }
-.calendar_page {
+body{
   	display: grid;
   	grid-template-columns: 1fr 1fr 1fr 1fr;
   	grid-template-rows: auto;
@@ -259,6 +259,35 @@ section>h1{
 }
 .art_more_img>div>img{
 	max-width: 200px;
+}
+.main_artist{
+	background: 
+		linear-gradient(
+			rgba(239, 237, 223,1) 20px,
+			rgba(239, 237, 223,0)
+			),
+		url('imgs/israel_plads_2.jpg') no-repeat center
+	;
+	height: 500px;
+	display: flex;
+	/*flex-direction: row-reverse;*/
+	justify-content: center;
+	align-items: center;
+
+}
+.artist_bg img{
+	max-width: 200px;
+	border-radius: 50%;
+	box-shadow: 0px 10px 5px #302E2F;
+	margin-bottom: 10px;
+}
+.artist_work{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.artist_work>div>img{
+	max-width: 400px;
 }
 /*
 
