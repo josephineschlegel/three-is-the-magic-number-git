@@ -201,7 +201,65 @@ section>h1{
 .artist{
 	margin: 20px;
 }
+.artwork_img{
+	grid-area: art_head_img;
+	height: 300px;
+	/*max-width: 100%;*/
+	background: 
+	linear-gradient(
+		to right,
+		rgba(255, 255, 255, 1) , 
+		rgba(255, 255, 255, 0) 30px
+		),
+	url('imgs/israel_plads.jpg') no-repeat center;
+}
+.art_artist{
+	grid-area: art_artist;
+}
+.art_artist>img{
+	max-width: 150px;
+	border-radius: 100%;
+	padding: 20px;
+	padding-bottom: 10px;
+}
 
+.art_quote{
+	padding: 20px;
+	grid-area: art_quote;
+	display: flex;
+	align-items: center;
+}
+.art_description{
+	grid-area: art_description;
+	padding: 20px;
+	text-indent: 20px;
+}
+.art_more{
+	grid-area: art_more;
+}
+.art_title{
+	grid-area: art_title;
+}
+.exhibition{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: auto;
+	grid-template-areas: 
+	"art_head_img art_head_img art_head_img art_head_img"
+	"art_title art_title art_title art_title"
+	"art_artist art_quote art_quote art_quote"
+	"art_description art_description art_description art_description"
+	"art_more art_more art_more art_more";
+}
+.art_more_img{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+.art_more_img>div>img{
+	max-width: 200px;
+}
 /*
 
 	Example gradient for artist page
