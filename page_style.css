@@ -238,6 +238,18 @@ section > h1 {
     align-items: center;
     box-shadow: 2px 9px 18px #888888;
 }
+#calen {
+     background:
+        linear-gradient(to left,
+            rgba(239, 237, 223, 1) 10%,
+            rgba(239, 237, 223, 0) 50%),
+        linear-gradient(rgba(239, 237, 223, 1) 20px,
+            rgba(239, 237, 223, 0)),
+    url('imgs/calen.jpg') no-repeat center;
+}
+#ads-cal {
+    margin-top: 900px;
+}
 
 #myInput {
     padding: 20px;
@@ -249,6 +261,7 @@ section > h1 {
 
 .artist_header > img {
     max-width: 130px;
+    height: 130px;
     border-radius: 50%;
     margin-bottom: 10px;
     margin-top: 30px;
@@ -257,13 +270,19 @@ section > h1 {
     margin-right: auto;
     box-shadow: 2px 9px 18px #888888;
 }
-
-.artist_header h1 {
+.artist_header > h4 {
+  font-family: alternate-gothic-no-1-d, sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.artist_header > h1 {
     font-size: 30px;
     align-content: center;
     text-align: center;
     margin-top: 70px;
-
+    font-family: alternate-gothic-no-1-d, sans-serif;
+text-transform: uppercase;
 }
 
 .main_art > .highlight_text {
@@ -418,8 +437,13 @@ button {
     border-style: solid;
 }
 
-.
-
+.ads, #events-more {
+    margin-top: 160px;
+   height: 650px;
+}
+.event-pic {
+    width: 200px;
+}
 /*
 
 	Example gradient for artist page
@@ -473,6 +497,7 @@ button {
             "text text text text"
     }
 
+    }
     .ft_event_img > img {
         max-width: 66%;
         margin-right: 10px;
