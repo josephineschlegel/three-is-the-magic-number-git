@@ -1,14 +1,17 @@
 *{
 	margin: 0px;
+
 	/*box-sizing: content-box;*/
 	/*box-sizing: border-box;*/
 }
+
 .center{
 	text-align: center;
 	align-content: center;
 	justify-content: center;
-	margin-right: auto;
-	margin-left: auto;
+margin-left: 30px;
+    width: 160px;
+
 }
 li{
 	display: inline-block;
@@ -54,12 +57,23 @@ main {
   	grid-area: main;
   	padding-left: 10%;
 }
-aside {
+.ads {
   	grid-area: aside;
-  	background: #302E2F;
-  	color: #FFFDF4;
+  	background: #efeddf;
+  	color: ;
   	padding: 50px;
-  	/*max-height: 100vh;*/
+
+   -moz-box-shadow:    inset 2 2 10px #302e2f;
+   box-shadow:         inset 2 2 10px #302e2f;
+    margin-top: 30px;
+    border-radius: 10px;
+    margin-right: 40px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    background: linear-gradient(270deg, #efeddf, #bfbeb2, #7e7c76);
+    background-size: 800% 800%;
+    animation: gradient 40s ease infinite;
+    box-shadow: 2px 9px 18px #888888;
 }
 footer {
   	grid-area: footer;
@@ -80,6 +94,7 @@ footer {
   	  "header header header header"
   	  "main main main aside"
   	  "footer footer footer footer";
+    background-color: #fffdf4;
 }
 .ft_event>h1{
 	grid-area: title;
@@ -122,8 +137,23 @@ section{
   	padding-bottom: 50px;
 }
 section>h1{
-	font-weight: bold;
+	font-size: 30px;
 }
+.artist-search::placeholder {
+
+    font-size: 14px;
+    font-family: alternate-gothic-no-1-d, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+   padding: 10px;
+
+}
+.artist-search {
+    height: 30px;
+    width: 90%;
+}
+
+
 .past_event_grid{
 	display: flex;
 	flex-wrap: wrap;
@@ -163,18 +193,32 @@ section>h1{
 	display: flex;
 	flex-direction: row-reverse;
 	align-items: center;
+    box-shadow: 2px 9px 18px #888888;
+}
 
-}
-.artist_header{
-	/*align-self: flex-end; */
-	position: relative;
-	right: 12%;
-}
+#myInput {
+    padding: 20px;
+    margin-top: -6px;
+    border: 0;
+    border-radius: 0;
+    background: #f1f1f1;
+  }
 .artist_header>img{
-	max-width: 200px;
+	max-width: 130px;
 	border-radius: 50%;
-	box-shadow: 5px 5px 5px #302E2F;
 	margin-bottom: 10px;
+    margin-top: 30px;
+    align-content: center;
+    margin-left: 40px;
+    margin-right: auto;
+        box-shadow: 2px 9px 18px #888888;
+}
+.artist_header h1{
+    font-size: 30px;
+    align-content: center;
+    text-align: center;
+    margin-top: 70px;
+
 }
 .main_art>.highlight_text{
 	/*align-self: flex-start;*/
@@ -183,7 +227,57 @@ section>h1{
 }
 .main_art>.highlight_text h1, .main_art>.highlight_text h3{
 	font-weight: bold;
-	text-shadow: 1px 1px #EFEDDF;
+
+
+
+}
+.highlight_text {
+    margin-top: -170px;
+    margin-left: -120px;
+    font-family: alternate-gothic-no-2-d, sans-serif;
+    font-weight:400;
+    font-style: normal;
+    color: #302e2f;
+    font-size: 130px;
+    background-color: transparent;
+    background-image: -webkit-linear-gradient(320deg, #fffdf4, #302e2f, #2E2E2B, #D6D4C7, #33332F);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    animation: gradient 10s ease infinite;
+}
+@-webkit-keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(40eg);
+  }
+  to {
+    -webkit-filter: hue-rotate(-160deg);
+  }
+}
+@keyframes color-change {
+    0% {
+        color: #fffdf4;
+    }
+
+    50% {
+        color: blue;
+    }
+
+    100% {
+        color: red;
+    }
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 51%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 51%
+    }
 }
 .artists{
 	display: flex;
@@ -201,7 +295,15 @@ section>h1{
 .artist{
 	margin: 20px;
 }
+.page-logo {
+    width: 150px;
+    height: auto;
+    float: right;
+    display: flex;
 
+
+}
+.
 /*
 
 	Example gradient for artist page
