@@ -41,21 +41,24 @@ a{
 		font-size
 	*/
 }
-a:hover{
-	color: #7E7268;
-	font-size: 220%;
-	/*transition: ease-in-out 0.3s;*/
-	/*
+
+a:hover {
+    color: #7E7268;
+    font-size: 220%;
+    /*transition: ease-in-out 0.3s;*/
+    /*
 		add animation
 		font-size
 	*/
 }
+
 header {
-  	grid-area: header;
+    grid-area: header;
 }
+
 main {
-  	grid-area: main;
-  	padding-left: 10%;
+    grid-area: main;
+    padding-left: 10%;
 }
 .ads {
   	grid-area: aside;
@@ -75,16 +78,22 @@ main {
     animation: gradient 40s ease infinite;
     box-shadow: 2px 9px 18px #888888;
 }
+
 footer {
-  	grid-area: footer;
-  	background: #EFEDDF;
-  	width: 100%;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	vertical-align: middle;
-	padding-top: 50px;
-	padding-bottom: 50px;
+    grid-area: footer;
+    background: #EFEDDF;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    vertical-align: middle;
+    padding: 10px;
+
+}
+
+#footer-logo {
+    margin-top: 35px;
+
 }
 body{
   	display: grid;
@@ -299,6 +308,34 @@ section>h1{
 .artist{
 	margin: 20px;
 }
+.calendar_page {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "header header header header"
+        "main main main aside"
+        "footer footer footer footer";
+    background-color: #fffdf4;
+}
+
+.ft_event > h1 {
+    grid-area: title;
+    font-weight: bold;
+}
+
+.ft_event_img {
+    grid-area: photo;
+    margin-top: 30px;
+}
+
+.ft_event_text {
+    grid-area: text;
+    margin-top: 30px;
+    padding: 20px;
+    vertical-align: middle;
+    text-indent: 20px;
+}
 .artwork_img{
 	grid-area: art_head_img;
 	height: 300px;
@@ -457,19 +494,331 @@ button {
 .art_more_img>div>img{
 	max-width: 200px;
 }
+.ft_event_text > p {
+    /*vertical-align: middle;*/
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.ft_event_img > img {
+    width: 100%;
+}
+
+.ft_event {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "title title title title"
+        "photo text text text"
+}
+
+section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+section > h1 {
+    font-size: 30px;
+}
+
+.artist-search::placeholder {
+
+    font-size: 14px;
+    font-family: alternate-gothic-no-1-d, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 10px;
+
+
+}
+
+.artist-search {
+    height: 30px;
+    width: 90%;
+    box-shadow: 1px 0.1px 18px #888888;
+    margin-top: 10px;
+    margin-left: -1px;
+}
+
+.contact {
+    box-shadow: 1px 0.1px 18px #888888;
+    height: 200px;
+    width: 560px;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.contact > h3 {
+    margin-top: 70px;
+    color: #302e2f;
+
+}
+
+.past_event_grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.past_event {
+    margin: 20px;
+}
+
+.past_event_text {
+    background: #777;
+    /*display: inline-block;*/
+    max-width: 200px;
+    padding: 20px;
+}
+
+.past_event_img {
+    background: #888;
+    /*display: inline-block;*/
+}
+
+.past_event_img > img {
+    width: 100px;
+    margin: 20px;
+}
+
+.main_art {
+    background:
+        linear-gradient(to left,
+            rgba(239, 237, 223, 1) 15%,
+            rgba(239, 237, 223, 0) 50%),
+        linear-gradient(rgba(239, 237, 223, 1) 20px,
+            rgba(239, 237, 223, 0)),
+        url('imgs/israel_plads.jpg') no-repeat center;
+    height: 500px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    box-shadow: 2px 9px 18px #888888;
+}
+#calen {
+     background:
+        linear-gradient(to left,
+            rgba(239, 237, 223, 1) 10%,
+            rgba(239, 237, 223, 0) 50%),
+        linear-gradient(rgba(239, 237, 223, 1) 20px,
+            rgba(239, 237, 223, 0)),
+    url('imgs/calen.jpg') no-repeat center;
+}
+#ads-cal {
+    margin-top: 900px;
+}
+
+#myInput {
+    padding: 20px;
+    margin-top: -6px;
+    border: 0;
+    border-radius: 0;
+    background: #f1f1f1;
+}
+
+.artist_header > img {
+    max-width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    align-content: center;
+    margin-left: 40px;
+    margin-right: auto;
+    box-shadow: 2px 9px 18px #888888;
+}
+.artist_header > h4 {
+  font-family: alternate-gothic-no-1-d, sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.artist_header > h1 {
+    font-size: 30px;
+    align-content: center;
+    text-align: center;
+    margin-top: 70px;
+    font-family: alternate-gothic-no-1-d, sans-serif;
+text-transform: uppercase;
+}
+
+.main_art > .highlight_text {
+    /*align-self: flex-start;*/
+    position: absolute;
+    left: 12%;
+}
+
+.main_art > .highlight_text h1,
+.main_art > .highlight_text h3 {
+    font-weight: bold;
+
+
+
+}
+
+.main_art-cal {
+    background:
+        linear-gradient(to left,
+            rgba(239, 237, 223, 1) 15%,
+            rgba(239, 237, 223, 0) 50%),
+        linear-gradient(rgba(239, 237, 223, 1) 20px,
+            rgba(239, 237, 223, 0)),
+
+    height: 500px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    box-shadow: 2px 9px 18px #888888;
+    width: 100%;
+    align-content: flex-start;
+float: left;
+}
+.cal-img {
+    align-content: left;
+    width: 600px;
+    display: flex;
+    height: 500px;
+      background:
+        linear-gradient(to left,
+            rgba(239, 237, 223, 1) 15%,
+            rgba(239, 237, 223, 0) 50%),
+        linear-gradient(rgba(239, 237, 223, 1) 20px,
+            rgba(239, 237, 223, 0)),
+}
+
+
+
+.main_art-cal > .highlight_text {
+    /*align-self: flex-start;*/
+    position: absolute;
+    left: 12%;
+}
+
+.main_art-cal > .highlight_text h1,
+.main_art > .highlight_text h3 {
+    font-weight: bold;
+
+
+
+}
+
+.highlight_text {
+    margin-top: -170px;
+    margin-left: -120px;
+    font-family: alternate-gothic-no-2-d, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #302e2f;
+    font-size: 130px;
+    background-color: transparent;
+    background-image: -webkit-linear-gradient(320deg, #fffdf4, #302e2f, #2E2E2B, #D6D4C7, #33332F);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient 10s ease infinite;
+}
+
+@-webkit-keyframes hue {
+    from {
+        -webkit-filter: hue-rotate(40eg);
+    }
+
+    to {
+        -webkit-filter: hue-rotate(-160deg);
+    }
+}
+
+@keyframes color-change {
+    0% {
+        color: #fffdf4;
+    }
+
+    50% {
+        color: blue;
+    }
+
+    100% {
+        color: red;
+    }
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 51%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 51%
+    }
+}
+
+.artists {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.artist > img {
+    max-width: 200px;
+    border-radius: 100%;
+    margin-bottom: 10px;
+}
+
+.artist > p {
+    max-width: 200px;
+}
+
+.artist {
+    margin: 20px;
+}
+
+.page-logo {
+    width: 150px;
+    height: auto;
+    float: right;
+    display: flex;
+
+
+}
+
+button {
+    font-size: 20px;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    background-color: #efeddf;
+    box-shadow: 1px 1px 18px #888888;
+    border: 0.5px #302e2f 0.8%;
+    border-style: solid;
+}
+
+.ads, #events-more {
+    margin-top: 160px;
+   height: 650px;
+}
+.event-pic {
+    width: 200px;
+}
 /*
 
 	Example gradient for artist page
 
 .tinted-image {
-  
+
   width: 300px;
   height: 200px;
-  
-  background: 
+
+  background:
     linear-gradient(
       to left,
-      rgba(255, 0, 0, 1) 50%, 
+      rgba(255, 0, 0, 1) 50%,
       rgba(255, 0, 0, 0)
     ),
     linear-gradient(
@@ -487,37 +836,43 @@ button {
 #FFFDF4
 */
 @media only screen and (max-width: 800px) {
-	header>nav>ul>li:first-child{
-		display: block;
-		text-align: center;
-		margin: 20px;
-	}
-	header>nav>ul{
-		align-content: center;
-		text-align: center;
-	}
-	header>nav>ul>li>img{
-		margin: 0px;
-	}
-	.ft_event{
-		grid-template-columns: 1fr 1fr 1fr 1fr;
-		grid-template-areas: 
-		"title title title title"
-		"photo photo photo photo"
-		"text text text text"
-	}
-	.ft_event_img>img{
-		max-width: 66%;
-		margin-right: 10px;
-		margin-left: 10px;
-	}
-	.ft_event_img{
-		text-align: center;
-	}
+    header > nav > ul > li:first-child {
+        display: block;
+        text-align: center;
+        margin: 20px;
+    }
+
+    header > nav > ul {
+        align-content: center;
+        text-align: center;
+    }
+
+    header > nav > ul > li > img {
+        margin: 0px;
+    }
+
+    .ft_event {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "title title title title"
+            "photo photo photo photo"
+            "text text text text"
+    }
+
+    }
+    .ft_event_img > img {
+        max-width: 66%;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    .ft_event_img {
+        text-align: center;
+    }
 }
 
 @media only screen and (max-width: 550px) {
-	header>nav>ul>li{
+header>nav>ul>li{
 		display: block;
 		text-align: center;
 		margin: 20px;
