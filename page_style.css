@@ -627,7 +627,18 @@ h1 span:nth-child(7) { -webkit-animation-delay: .6s; animation-delay: .6s; }
     background: rgba(0, 0, 0, 0.5);
     z-index: 1;
 }
-
+.like-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: center;
+    margin-top: 40px;
+}
+.fav > p {
+    margin-left: -23px;
+}
+.fav-img {
+    width: 50px;
+}
 .advert {
      width: 100%;
     height: auto;
