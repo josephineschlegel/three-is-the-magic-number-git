@@ -1,15 +1,30 @@
 /*ALL PAGES STYLING*/
-h1 {
-    font-family: alternate-gothic-no-3-d, sans-serif;
+h1, h2, h3 {
+    font-family: alternate-gothic-no-2-d, sans-serif;
     font-weight: 400;
     font-style: normal;
     text-transform: uppercase;
     color: #302e2f;
 }
 p, a {
-    font-family: alternate-gothic-no-3-d, sans-serif;
+    font-family: alternate-gothic-no-1-d, sans-serif;
     font-weight: 400;
     font-style: normal;
+
+}
+.nav-page {
+    font-size:30px;
+}
+h3 {
+    font-size: 60px;
+
+
+}
+.page-logo {
+    width: 180px;
+    height: auto;
+    float: right;
+    display: flex;
 }
 /*INDEX PAGE*/
 #index {
@@ -33,6 +48,7 @@ p, a {
     background-color: transparent;
 
 }
+
 .nav-container a {
     text-decoration: none;
     background-color: transparent;
@@ -82,10 +98,7 @@ p, a {
   border: 2px dashed red;
 }
 */
-.page-logo {
-    width: 120px;
-    height: auto;
-}
+
 #kopenhagen-grid {
     margin-top: -10px;
 }
@@ -190,6 +203,35 @@ body {font-family: Verdana, sans-serif;}
   background: #1abc9c;
   color: white !important
 }
+.main_art {
+    background: linear-gradient(90deg, #efeddf, #87867e, #bfbeb2, #7e7c76);
+    background-size: 800% 800%;
+    animation: gradient 20s ease infinite;
+    width: auto;
+
+
+}
+.highlight_text {
+    margin-top: -170px;
+    margin-left: -20px;
+    font-size: 900%;
+
+}
+.artist_header {
+height: 500px;
+    margin-top: -300px;
+    margin-right: -100px
+}
+
+
+
+
+
+
+
+
+
+
 
 /* Add media queries for smaller screens */
 @media screen and (max-width:720px) {
