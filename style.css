@@ -1,47 +1,38 @@
 /*ALL PAGES STYLING*/
-
-
 h1 {
-    font-family: alternate-gothic-no-2-d, sans-serif;
+    font-family: alternate-gothic-no-3-d, sans-serif;
     font-weight: 400;
     font-style: normal;
     text-transform: uppercase;
     color: #302e2f;
 }
-
 p {
     font-family: alternate-gothic-no-3-d, sans-serif;
     font-weight: 400;
     font-style: normal;
 }
-
-
 /*INDEX PAGE*/
 #index {
     background-color: #fffdf4;
 }
-
-nav {
+.nav-container {
 
     background: linear-gradient(270deg, #efeddf, #87867e, #bfbeb2, #7e7c76);
     background-size: 800% 800%;
     animation: gradient 10s ease infinite;
 
 }
-
 .logo {
-    width: 200px;
+    width: 60%;
     height: auto;
     display: flex;
     float: right;
     margin-left: 30px;
     margin-right: -10px;
-    margin-top: -20px;
+    margin-top: -10px;
     background-color: transparent;
+
 }
-
-
-
 .nav-container a {
     text-decoration: none;
     background-color: transparent;
@@ -57,10 +48,7 @@ nav {
     margin: 2px;
     grid-column-gap: 10px;
     grid-gap: 0px;
-
-
 }
-
 .grid-item {
 
   border: 10px solid #fffdf4;
@@ -68,46 +56,43 @@ nav {
     height: 100%;
     background-color: transparent;
    width: auto;
-
 }
-
-.grid-text {
-
+.grid-text, grid-text p {
     margin-top: 10px;
     line-height: 70px;
     margin-left: 5px;
     text-decoration: none;
-    justify-content: space-around;
-    color: #302e2f;
+
+    color: transparent;
     font-family: alternate-gothic-no-3-d, sans-serif;
-    font-weight: 800;
+    font-weight: 600;
     font-style: normal;
     color: #302e2f;
-    font-size: 60px;
+    font-size: 70px;
     background-color: transparent;
     background-image: -webkit-linear-gradient(95deg, #fffdf4, #302e2f, #2E2E2B, #D6D4C7, #33332F);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-	-webkit-animation: hue 4s infinite linear;
-
+/*    -webkit-text-stroke-width: 0.1px;*/
+/*    -webkit-text-stroke-color: #D6D4C7,;*/
+/*	-webkit-animation: hue 4s infinite linear;*/
 }
+/*
 .grid-item:nth-child(2n) {
   border: 2px dashed red;
 }
+*/
 #kopenhagen-grid {
     margin-top: -10px;
-
 }
-
 @-webkit-keyframes hue {
   from {
-    -webkit-filter: hue-rotate(0deg);
+    -webkit-filter: hue-rotate(40eg);
   }
   to {
     -webkit-filter: hue-rotate(-160deg);
   }
 }
-
 @keyframes color-change {
     0% {
         color: #fffdf4;
@@ -121,10 +106,6 @@ nav {
         color: red;
     }
 }
-
-
-
-
 @keyframes gradient {
     0% {
         background-position: 0% 51%
@@ -140,13 +121,19 @@ nav {
 }
 /*MEDIA QUIERIES*/
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {}
+@media only screen and (max-width: 600px, max-width:) {
 
+}
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {...}
+@media only screen and (min-width: 600px, max-width:768px) {
 
+}
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {...}
+@media only screen and (min-width: 768px, max-width:992px) {
+    .logo {
+        display: none;
+    }
+    }}
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {...}
