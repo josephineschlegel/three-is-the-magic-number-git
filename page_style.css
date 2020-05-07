@@ -36,7 +36,6 @@ a{
 	text-decoration: none;
 	color: #302E2F;
 	font-size: 200%;
-	/*transition: ease-in-out 0.3s;*/
 	/*
 		font-size
 	*/
@@ -296,12 +295,13 @@ section>h1{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
+	padding-top: 0px;
 }
-.artist>img{
+/*.artist img{
 	max-width: 200px;
 	border-radius: 100%;
 	margin-bottom: 10px;
-}
+}*/
 .artist>p{
 	max-width: 200px;
 }
@@ -357,11 +357,6 @@ section>h1{
 	padding: 20px;
 	padding-bottom: 10px;
 }
-.page-logo {
-    width: 150px;
-    height: auto;
-    float: right;
-    display: flex;}
 .art_quote{
 	padding: 20px;
 	grid-area: art_quote;
@@ -536,29 +531,44 @@ section > h1 {
 
 .artist-search {
     height: 30px;
-    width: 90%;
+    max-width: 50%;
     box-shadow: 1px 0.1px 18px #888888;
     margin-top: 10px;
     margin-left: -1px;
+    margin-right: 10px;
 }
 
 .contact {
     box-shadow: 1px 0.1px 18px #888888;
-    height: 200px;
-    width: 560px;
     text-align: center;
-    margin-top: 10px;
+    /*height: 200px;*/
+    max-width: 40%;
+    /*margin-top: 10px;
     margin-left: 10px;
     margin-left: 10px;
     margin-bottom: 10px;
+    padding-right: 75px; 
+    padding-left: 75px;*/ 
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .contact > h3 {
-    margin-top: 70px;
+    /*margin-top: 70px;*/
+    padding: 20px;
     color: #302e2f;
 
 }
-
+.contact_us{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.contact_ft{
+	display: flex;
+	flex-wrap: wrap;
+}
 .past_event_grid {
     display: flex;
     flex-wrap: wrap;
@@ -630,7 +640,7 @@ section > h1 {
     margin-bottom: 10px;
     margin-top: 30px;
     align-content: center;
-    margin-left: 40px;
+    /*margin-left: 40px;*/
     margin-right: auto;
     box-shadow: 2px 9px 18px #888888;
 }
@@ -769,14 +779,23 @@ section > h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    max-height: 100%;
 }
 
-.artist > img {
-    max-width: 200px;
-    border-radius: 100%;
+.artist img {
+    /*max-width: 200px;*/
     margin-bottom: 10px;
+    height: 100%;
 }
-
+.artist>div{
+	height: 200px;
+	width: 200px;
+    border-radius: 50%;
+	overflow: hidden;
+}
+.artist >h4{
+	margin-top: 10px;
+}
 .artist > p {
     max-width: 200px;
 }
@@ -784,16 +803,17 @@ section > h1 {
 .artist {
     margin: 20px;
 }
-
-.page-logo {
-    width: 150px;
-    height: auto;
-    float: right;
-    display: flex;
-
-
+.artist_header >div{
+	width: 130px;
+	height: 130px;
+	overflow: hidden;
+	border-radius: 50%; 
+	display: inline-block;
+	margin: 15px 0px;
 }
-
+.artist_header>div>img{
+	height: 100%; 
+}
 button {
     font-size: 20px;
     border-radius: 10px;
@@ -807,13 +827,12 @@ button {
 .ads,
 #events-more {
     margin-top: 160px;
-    height: 650px;
+    height: 700px;
 }
 
 .event-pic {
     width: 200px;
 }
-
 /*
 
 	Example gradient for artist page
@@ -868,6 +887,7 @@ p {
     width: 100%;
     max-width: 500px;
     margin: auto;
+    font-size: 1.2em;
 }
 
 a:link,
@@ -973,6 +993,8 @@ h1 span:nth-child(7) { -webkit-animation-delay: .6s; animation-delay: .6s; }
     font-size: 25px;
     overflow: hidden;
     color: #efeddf;
+    text-shadow: 2px 2px 5px #7E7268;
+    padding-right: 10px;
 }
 
 
@@ -996,7 +1018,7 @@ h1 span:nth-child(7) { -webkit-animation-delay: .6s; animation-delay: .6s; }
     margin-top: 40px;
 }
 .fav > p {
-    margin-left: -23px;
+    /*margin-left: -23px;*/
 }
 .fav-img {
     width: 50px;
@@ -1074,8 +1096,55 @@ h1 span:nth-child(7) { -webkit-animation-delay: .6s; animation-delay: .6s; }
 .ft_event_img {
     text-align: center;
 }
+.new_contact{
+	box-shadow: 1px 0.1px 18px #888888;
+    text-align: center;
+    width: 33%;
+    max-width: 40%;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
-
+/*a{
+	transition: ease-in-out 0.3s;
+	font-size: 200%;
+}*/
+@media only screen and (max-width: 1100px) {
+	.contact input{
+		margin-bottom: 10px;
+		max-width: 90%;
+	}
+}
+@media only screen and (max-width: 1000px) {
+	.calendar_page{
+		grid-template-areas: 
+		"header header header header"
+        "main main main main"
+        "aside aside aside aside"
+        "footer footer footer footer";
+	}
+	.highlight_text{
+		display: none;
+	}
+	.advert{
+		width: auto;
+		max-height: 100%;
+	}
+	.ads>.content {
+		height: 100%;
+		text-align: center;
+	}
+	.contact h3{
+		font-size: 40px;
+	}
+	.new_contact button{
+		margin: 15px;
+	}
+	.ads, #events-more {
+	    margin-top: 160px;
+	    height: 700px;
+	}
+}
 @media only screen and (max-width: 550px) {
 header>nav>ul>li{
 		display: block;
@@ -1094,5 +1163,62 @@ header>nav>ul>li{
 	}
 	.ft_event_img>img{
 		max-width: 80%;
+	}
+	.contact h3{
+		font-size: 30px;
+	}
+	.contact input{
+		max-width: 80%;
+	}
+	.contact{
+		width: 80%;
+	}
+	nav a {
+	    font-size: 100%;
+	}
+	.main_art {
+		background: /*linear-gradient(to left, rgba(239, 237, 223, 1) 5%,
+						rgba(239, 237, 223, 0) 25%),
+					linear-gradient(to right, rgba(239, 237, 223, 1) 5%,
+						rgba(239, 237, 223, 0) 25%),*/
+					linear-gradient(rgba(239, 237, 223, 1) 20px,
+						rgba(239, 237, 223, 0)),
+					url(imgs/israel_plads.jpg) no-repeat center;
+	    height: 500px;
+	    display: flex;
+	    flex-direction: row-reverse;
+	    align-items: center;
+	    box-shadow: 2px 9px 18px #888888;
+		justify-content: center;
+	}
+	.artist_header{
+		margin-right: 0px;
+	}
+}
+@media only screen and (max-width: 800px) {
+	.contact button{
+			font-size: 15px;
+			margin: 15px 10px;
+	}
+	.contact{
+		margin-right: 20px;
+		padding-right: 10px; 
+		margin-left: 20px;
+		padding-left: 10px; 
+	}
+	/*.new_contact button{
+		font-size: 15px;
+		margin: 15px 10px;
+	}*/
+	.new_contact, .ft_logo{
+		max-width: none;
+		width: 80%
+	}
+	.page-logo{
+		width: 100px;
+		margin-bottom: 10px;
+	}
+	nav a {
+	    font-size: 125%;
 	}
 }

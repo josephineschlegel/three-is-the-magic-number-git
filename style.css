@@ -30,8 +30,9 @@ h3 {
 .page-logo {
     width: 180px;
     height: auto;
-    float: right;
-    display: flex;
+    /*float: right;*/
+    /*display: flex;*/
+    justify-content: center;
 }
 /*INDEX PAGE*/
 #index {
